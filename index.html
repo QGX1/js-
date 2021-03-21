@@ -1,0 +1,48 @@
+<!--
+ * @Descripttion: 文本描述
+ * @Author: qiuguixian
+ * @Date: 2021-03-13 10:32:17
+ * @LastEditors: qiuguixian
+ * @LastEditTime: 2021-03-21 22:28:33
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .swiper-contain {
+        width: 600px;
+        height: 400px;
+        background: rebeccapurple;
+        border: 3px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="swiper-contain"></section>
+    <!-- <div>jjjkk</div> -->
+  </body>
+  <script src="./js/swiper.js"></script>
+  <script>
+    let options = {
+      parentDom: '.swiper-contain',
+      imgs: ['./img/1.jpg', './img/2.jpg', './img/3.jpg', './img/4.jpg'],
+      imgClassName: 'swiper-img', //自定义图片类名
+
+      autoSwitch: {
+        state: true, //是否自动跳转
+        duration: 2000, //多少秒自动切换图片
+      },
+      // clickSwitch: {
+      //   state: true, //是否点击切换小圆点
+      // },
+      upDownWitch: {
+        state: true, //上下切换图片
+      },
+    };
+    let mySwiper = new swiper(options);
+  </script>
+</html>
